@@ -1,3 +1,5 @@
+import EmailLink from './EmailLink';
+
 export default function Patrocinio() {
   return (
     <>
@@ -11,7 +13,7 @@ export default function Patrocinio() {
                 patrocinadores. Se você ou sua empresa tem interesse em nos ajudar a
                 fazer esse evento acontecer, entre em contato conosco através do e-mail
               </p>
-              <a href="mailto:caipyra@python.org.br">caipyra@python.org.br</a>
+              <EmailLink />
             </div>
           </div>
           <div className="row">
