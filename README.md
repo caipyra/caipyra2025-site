@@ -19,6 +19,7 @@ Projeto para o site oficial do **Caipyra 2025**. Utiliza:
 - [Construindo o Projeto para Produção](#construindo-o-projeto-para-produção)
 - [Pré-visualizando a Build de Produção](#pré-visualizando-a-build-de-produção)
 - [Servindo os Arquivos Estáticos (Opcional)](#servindo-os-arquivos-estáticos-opcional)
+- [Atualizando a página publicada](#atualizando-a-página-publicada)
 - [Estrutura do Projeto](#estrutura-do-projeto)
 - [Personalização](#personalização)
 - [Contribuição](#contribuição)
@@ -89,6 +90,14 @@ serve .
 ```
 
 O servidor estará disponível em [http://localhost:3000](http://localhost:3000) por padrão.
+
+## Atualizando a Página Publicada
+
+Para atualizar a branch (e consequentemente atualizar a página publicada), execute:
+
+```bash
+npm run deploy
+```
 
 ## Estrutura do Projeto
 
