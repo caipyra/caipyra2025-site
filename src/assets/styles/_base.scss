@@ -1,0 +1,14 @@
+@use "variables" as *;
+
+body,
+html {
+  font-family: $font-primary;
+  color: $color-text-main;
+  scroll-behavior: smooth;
+}
+h2,
+h3,
+h4 {
+  font-family: $font-secondary;
+  color: $color-text-heading;
+}

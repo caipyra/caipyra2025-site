@@ -1,0 +1,554 @@
+@use "variables" as *;
+
+// ------------------------
+// Global Base Styles
+// ------------------------
+body,
+html {
+  font-family: $font-primary;
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased !important;
+  color: $color-gray;
+  font-weight: 400;
+  width: 100% !important;
+  height: 100% !important;
+
+  // Nested headings
+  h2,
+  h3,
+  h4 {
+    font-family: $font-secondary;
+  }
+
+  h2 {
+    text-transform: uppercase;
+    margin: 0 0 20px 0;
+    font-weight: 800;
+    font-size: 36px;
+    color: $color-dark;
+  }
+
+  h3 {
+    font-size: 26px;
+    font-weight: 600;
+    color: $color-dark;
+  }
+
+  h4 {
+    font-size: 20px;
+    color: $color-dark;
+    font-weight: 600;
+  }
+
+  p {
+    font-size: 18px;
+    line-height: 28px;
+
+    &.intro {
+      margin: 12px 0 0;
+      line-height: 28px;
+    }
+  }
+
+  a {
+    color: $color-blue;
+    font-weight: 400;
+
+    &:hover,
+    &:focus {
+      text-decoration: none;
+      color: $color-blue;
+    }
+  }
+}
+
+// ------------------------
+// Headings & Lists
+// ------------------------
+h5 {
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+}
+
+// ------------------------
+// Horizontal Rule
+// ------------------------
+hr {
+  height: 2px;
+  width: 70px;
+  text-align: center;
+  position: relative;
+  background: #1e7a46;
+  margin-bottom: 20px;
+  border: 0;
+}
+
+// ------------------------
+// Section Titles
+// ------------------------
+.section-title {
+  margin-bottom: 70px;
+
+  h2 {
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+
+    &::after {
+      position: absolute;
+      content: "";
+      background: $gradient-accent;
+      height: 4px;
+      width: 60px;
+      bottom: 0;
+      margin-left: -30px;
+      left: 50%;
+    }
+  }
+
+  p {
+    font-size: 18px;
+  }
+}
+
+// ------------------------
+// Buttons
+// ------------------------
+.btn-custom {
+  font-family: $font-secondary;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #5ca9fb;
+  background-image: $gradient-accent;
+  padding: 14px 34px;
+  letter-spacing: 1px;
+  margin: 0;
+  font-size: 15px;
+  font-weight: 500;
+  border-radius: 25px;
+  transition: all 0.5s linear;
+  border: 0;
+
+  &:hover,
+  &:focus,
+  &.focus,
+  &:active,
+  &.active {
+    color: #fff;
+    background-image: none;
+    background-color: #6372ff;
+  }
+}
+
+// Remove focus outlines
+.btn:active,
+.btn.active {
+  background-image: none;
+  outline: 0;
+  box-shadow: none;
+}
+
+a:focus,
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn.active.focus {
+  outline: none;
+  outline-offset: 0;
+}
+
+// ------------------------
+// Header Section
+// ------------------------
+.intro {
+  display: table;
+  width: 100%;
+  padding: 0;
+  background: url("../img/intro-bg.jpg") center center no-repeat;
+  background-color: #e5e5e5;
+  background-size: cover;
+
+  .overlay {
+    background: rgba(0, 0, 0, 0.2);
+  }
+
+  h1 {
+    font-family: $font-secondary;
+    color: #fff;
+    font-size: 82px;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 10px;
+
+    span {
+      font-weight: 800;
+      color: #5ca9fb;
+    }
+  }
+
+  p {
+    color: #fff;
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 30px;
+    margin: 0 auto 60px;
+  }
+}
+
+header .intro-text {
+  padding-top: 350px;
+  padding-bottom: 200px;
+  text-align: center;
+
+  img {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .logo {
+    display: block;
+    margin: 0 auto;
+    max-width: 40%;
+  }
+}
+
+// ------------------------
+// Programação Section
+// ------------------------
+#programacao {
+  padding: 100px 0;
+  background: $color-gray-light;
+
+  i.fa {
+    font-size: 38px;
+    margin-bottom: 20px;
+    transition: all 0.5s;
+    color: #fff;
+    width: 100px;
+    height: 100px;
+    padding: 30px 0;
+    border-radius: 50%;
+    background: $gradient-accent;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.05);
+  }
+}
+
+// ------------------------
+// About Section
+// ------------------------
+#about {
+  padding: 100px 0;
+
+  h3 {
+    font-size: 22px;
+    margin: 0 0 20px 0;
+  }
+
+  h2 {
+    position: relative;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+
+    &::after {
+      position: absolute;
+      content: "";
+      background: $gradient-accent;
+      height: 4px;
+      width: 60px;
+      bottom: 0;
+      left: 0;
+    }
+  }
+
+  .about-text {
+    li {
+      margin-bottom: 6px;
+      margin-left: 6px;
+      list-style: none;
+      padding: 0;
+
+      &:before {
+        content: "\f00c";
+        font-family: "FontAwesome";
+        color: #5ca9fb;
+        font-size: 11px;
+        font-weight: 300;
+        padding-right: 8px;
+      }
+    }
+  }
+
+  p {
+    line-height: 28px;
+    margin: 30px 0;
+  }
+
+  @media (max-width: 768px) {
+    img {
+      margin: 50px 0;
+    }
+  }
+}
+
+// ------------------------
+// Local Section
+// ------------------------
+#local {
+  padding: 100px 0;
+  background: $gradient-accent;
+  color: #fff;
+
+  .local-desc {
+    margin: 10px 10px 20px;
+  }
+
+  h2 {
+    color: #fff;
+  }
+
+  .section-title {
+    h2::after {
+      position: absolute;
+      content: "";
+      background: rgba(255, 255, 255, 0.3);
+      height: 4px;
+      width: 60px;
+      bottom: 0;
+      margin-left: -30px;
+      left: 50%;
+    }
+  }
+
+  i.fa {
+    font-size: 42px;
+    width: 120px;
+    height: 120px;
+    padding: 40px 0;
+    background: $gradient-accent;
+    border-radius: 50%;
+    color: #fff;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.05);
+  }
+
+  h3 {
+    font-weight: 500;
+    padding: 5px 0;
+    color: #fff;
+  }
+
+  p {
+    color: rgba(255, 255, 255, 0.75);
+  }
+
+  .local-desc {
+    margin-bottom: 40px;
+  }
+
+  .map-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 2px solid #ddd;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+
+    iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+  }
+}
+
+// ------------------------
+// Patrocínio Section
+// ------------------------
+#patrocinio {
+  padding: 100px 0;
+
+  .patrocinio-item {
+    margin: 1px -15px 0 -14px;
+    padding: 0;
+
+    .hover-bg {
+      overflow: hidden;
+      position: relative;
+      margin: 0;
+    }
+  }
+}
+
+// ------------------------
+// Código de Conduta Section
+// ------------------------
+#codigo {
+  padding: 100px 0;
+  background: #f6f6f6;
+
+  i {
+    color: #e6e6e6;
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+
+  ul li {
+    margin: 0 20px 6px;
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
+
+// ------------------------
+// Covid Section
+// ------------------------
+#covid {
+  padding: 100px 0 60px 0;
+  background: $gradient-accent;
+  color: rgba(255, 255, 255, 0.75);
+
+  h2 {
+    color: #fff;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+  }
+
+  .section-title {
+    margin-bottom: 40px;
+
+    p {
+      font-size: 16px;
+    }
+
+    h2::after {
+      position: absolute;
+      content: "";
+      background: rgba(255, 255, 255, 0.3);
+      height: 4px;
+      width: 60px;
+    }
+  }
+
+  h3 {
+    color: #fff;
+    margin-top: 80px;
+    margin-bottom: 25px;
+    padding-bottom: 20px;
+    font-weight: 400;
+  }
+
+  form {
+    padding-top: 20px;
+  }
+
+  .text-danger {
+    color: #cc0033;
+    text-align: left;
+  }
+
+  .btn-custom {
+    margin: 30px 0;
+    background: transparent;
+    border: 2px solid #fff;
+
+    &:hover {
+      color: #1f386e;
+      background: #fff;
+    }
+  }
+}
+
+// ------------------------
+// Footer Section
+// ------------------------
+#footer {
+  background: #f6f6f6;
+  padding: 30px 0;
+
+  p {
+    color: #888;
+    font-size: 14px;
+  }
+
+  a {
+    color: #608dfd;
+
+    &:hover {
+      border-bottom: 2px solid #608dfd;
+    }
+  }
+}
+
+// ------------------------
+// Navbar Overrides
+// ------------------------
+.navbar {
+  padding: 15px;
+  transition: all 0.8s;
+
+  &.navbar-light.bg-light {
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    border-color: transparent;
+  }
+
+  .navbar-brand {
+    font-family: $font-tertiary;
+    font-size: 24px;
+    font-weight: 700;
+    color: #333;
+    text-transform: uppercase;
+  }
+
+  .navbar-nav {
+    .nav-link {
+      font-family: $font-tertiary;
+      text-transform: uppercase;
+      color: #555;
+      font-size: 15px;
+      font-weight: 400;
+      padding: 8px 2px;
+      margin: 9px 20px 0 20px;
+      position: relative;
+
+      &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        left: 0;
+        bottom: -1px;
+        width: 0;
+        height: 2px;
+        background: $gradient-accent;
+        transition: width 0.2s;
+      }
+
+      &:hover::after {
+        width: 100%;
+      }
+
+      &.active,
+      &:focus,
+      &.active:hover,
+      &.active:focus {
+        &::after {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
