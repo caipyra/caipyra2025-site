@@ -1,14 +1,8 @@
-import { Navbar, Nav } from "react-bootstrap";
+import { Navbar, Nav } from 'react-bootstrap';
 
 export default function NavBar() {
   return (
-    <Navbar
-      collapseOnSelect
-      expand="lg"
-      bg="light"
-      variant="light"
-      fixed="top"
-    >
+    <Navbar collapseOnSelect expand="lg" bg="light" variant="light" fixed="top">
       <Navbar.Brand href="#page-top">Caipyra 2025</Navbar.Brand>
 
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />

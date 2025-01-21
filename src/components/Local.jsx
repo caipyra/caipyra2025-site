@@ -8,7 +8,7 @@ export default function Local() {
         <div className="row">
           <div className="col-md-6">
             <p>
-              Os tutoriais, palestras e springs acontecerão na{" "}
+              Os tutoriais, palestras e springs acontecerão na{' '}
               <b>FATEC Ribeirão Preto</b>
             </p>
 
