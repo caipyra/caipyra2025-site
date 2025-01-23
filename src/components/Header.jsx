@@ -7,7 +7,7 @@ export default function Header() {
             <div className="container">
               <div className="row">
                 <div className="intro-text">
-                  <img src="img/logo-caipyra.svg" alt="Caipyra" className="logo" />
+                  <img src="/img/logo-caipyra.png" alt="Caipyra" className="logo" />
                   <h1>
                     <p>O único evento de Python com quentão e paçoquinha!</p>
                   </h1>
