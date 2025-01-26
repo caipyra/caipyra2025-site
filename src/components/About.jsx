@@ -21,7 +21,7 @@ export default function About() {
 
               <h3>Ribeirão Preto</h3>
               <p>
-                O Caipyra 2024 está de volta pra onde tudo começou: Ribeirão Preto! Essa
+                O Caipyra está de volta pra onde tudo começou: Ribeirão Preto! Essa
                 cidade vibrante já recebeu as duas primeiras edições do evento e agora
                 vai ser palco de mais uma rodada de muito aprendizado e troca de ideias.
                 Ribeirão é uma cidade que mistura inovação com uma ambiente acolhedor. A
