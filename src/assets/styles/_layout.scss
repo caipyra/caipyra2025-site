@@ -473,16 +473,38 @@ header .intro-text {
   background: #f6f6f6;
   padding: 30px 0;
 
-  p {
-    color: #888;
-    font-size: 14px;
+  .credits {
+    p {
+      color: #888;
+      font-size: 14px;
+    }
+
+    a {
+      color: #608dfd;
+
+      &:hover {
+        border-bottom: 2px solid #608dfd;
+      }
+    }
   }
 
-  a {
-    color: #608dfd;
+  .social-links {
+    a {
+      color: $color-purple-dark;
+      text-decoration: none; // Optional reset
+      transition: color 0.5s linear; // Smooth transition for font color
 
-    &:hover {
-      border-bottom: 2px solid #608dfd;
+      &:hover {
+        color: $color-blue;
+      }
+
+      i.fa-brands {
+        font-size: 42px;
+        width: 120px;
+        height: 120px;
+        padding: 40px 0;
+        border-radius: 50%;
+      }
     }
   }
 }
