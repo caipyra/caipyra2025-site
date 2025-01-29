@@ -21,6 +21,13 @@ export default function Footer() {
               <i className="fa-brands fa-square-instagram" />
             </a>
             <a
+              href="https://www.linkedin.com/company/caipyra/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i className="fa-brands fa-linkedin" />
+            </a>
+            <a
               href="https://www.youtube.com/channel/UCxmUo2KbpP77n-rLgUTvM6g"
               target="_blank"
               rel="noopener noreferrer"
