@@ -14,7 +14,7 @@ export default function Header() {
                     <p>O único evento de Python com quentão e paçoquinha!</p>
                   </h1>
                   <a
-                    href="https://www.eventbrite.com/e/caipyra-2025-tickets-1229501735789?aff=oddtdtcreator"
+                    href="https://caipyra2025.eventbrite.com.br"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
