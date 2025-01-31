@@ -13,6 +13,17 @@ export default function Header() {
                   <h1>
                     <p>O único evento de Python com quentão e paçoquinha!</p>
                   </h1>
+                  <a
+                    href="https://www.eventbrite.com/e/caipyra-2025-tickets-1229501735789?aff=oddtdtcreator"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <button type="button" className="btn btn-custom btn-lg">
+                      Ingressos à venda
+                      <br /> <br />
+                      Lote promocional <i className="fas fa-ticket"></i>
+                    </button>
+                  </a>
                 </div>
               </div>
             </div>
