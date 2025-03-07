@@ -14,7 +14,7 @@ export default function Footer() {
               <i className="fa-brands fa-bluesky" />
             </a>
             <a
-              href="https://instagram.com/caipyra_py"
+              href="https://instagram.com/caipyra.py"
               target="_blank"
               rel="noopener noreferrer"
             >
