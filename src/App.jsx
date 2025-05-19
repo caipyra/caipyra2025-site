@@ -8,6 +8,7 @@ import Programacao from './components/Programacao';
 import Local from './components/Local';
 import Covid from './components/Covid';
 import KCEE from './components/KCEE';
+import Keynotes from './components/Keynotes';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <NavBar />
       <Header />
       <About />
+      <Keynotes />
       <Programacao />
       <Local />
       <Patrocinio />

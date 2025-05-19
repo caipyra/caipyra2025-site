@@ -1,4 +1,29 @@
+import React from 'react';
+
 export default function Local() {
+  const latitude = -21.186904178677697;
+  const longitude = -47.83625102408651;
+  const address = 'Av. Pio XII, 1255 - Vila Virginia - Ribeirão Preto/SP';
+
+  const handleOpenMaps = () => {
+    const geoUrl = `geo:${latitude},${longitude}?q=${encodeURIComponent(address)}`;
+    const webUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(address)}`;
+    window.location.href = geoUrl;
+    setTimeout(() => {
+      window.open(webUrl, '_blank');
+    }, 500);
+  };
+
+  const handleCopyAddress = async () => {
+    try {
+      await navigator.clipboard.writeText(address);
+      alert('Endereço copiado para a área de transferência!');
+    } catch (err) {
+      console.error('Falha ao copiar endereço:', err);
+      alert('Não foi possível copiar o endereço.');
+    }
+  };
+
   return (
     <div id="local" className="text-center">
       <div className="container">
@@ -13,9 +38,30 @@ export default function Local() {
             </p>
 
             <p>
-              <b>Av. Pio XII, 1255 - Vila Virginia - Ribeirão Preto/SP</b>
+              <b>{address}</b>
             </p>
+
+            <div className="map-action-buttons d-flex flex-column align-items-center mt-3">
+              <button
+                type="button"
+                className="btn btn-custom btn-lg mb-2"
+                style={{ width: 'auto' }}
+                onClick={handleOpenMaps}
+              >
+                Abrir no app de mapas <i className="fa fa-map-location-dot" />
+              </button>
+
+              <button
+                type="button"
+                className="btn btn-custom btn-lg"
+                style={{ width: 'auto' }}
+                onClick={handleCopyAddress}
+              >
+                Copiar endereço <i className="fa fa-clipboard" />
+              </button>
+            </div>
           </div>
+
           <div className="col-md-6">
             <div className="map-container">
               <iframe

@@ -185,7 +185,6 @@ a:focus,
     font-weight: 700;
     margin-top: 0;
     margin-bottom: 10px;
-
   }
 
   p {
@@ -328,17 +327,6 @@ header .intro-text {
     }
   }
 
-  i.fa {
-    font-size: 42px;
-    width: 120px;
-    height: 120px;
-    padding: 40px 0;
-    background: $gradient-accent;
-    border-radius: 50%;
-    color: #fff;
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.05);
-  }
-
   h3 {
     font-weight: 500;
     padding: 5px 0;
@@ -347,10 +335,6 @@ header .intro-text {
 
   p {
     color: rgba(255, 255, 255, 0.75);
-  }
-
-  .local-desc {
-    margin-bottom: 40px;
   }
 
   .map-container {
@@ -573,3 +557,52 @@ header .intro-text {
     }
   }
 }
+
+#keynotes {
+  padding: 100px 0;
+  background: #f6f6f6;
+
+  i {
+    color: #e6e6e6;
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+
+  .keynote {
+    position: relative;
+    padding: 20px;
+
+    .keynote-image {
+      float: left;
+      margin-right: 15px;
+
+      img {
+        display: block;
+        width: 64px;
+        height: 64px;
+        border-radius: 50%;
+      }
+      display: block;
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+    }
+
+    .keynote-content {
+      position: relative;
+      overflow: hidden;
+
+      p {
+        margin-bottom: 0;
+        font-size: 16px;
+        // font-style: italic;
+      }
+    }
+
+    .keynote-meta {
+      margin-top: 10px;
+      color: #666;
+    }
+  }
+}
+
