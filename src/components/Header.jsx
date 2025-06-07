@@ -24,6 +24,18 @@ export default function Header() {
                       1º Lote <i className="fas fa-ticket"></i>
                     </button>
                   </a>
+                  <p className="ingresso-social">
+                    Caso você não possa arcar com um ingresso, você pode pleitear um
+                    ingresso social clicando{' '}
+                    <a
+                      href="https://docs.google.com/forms/d/e/1FAIpQLSdWCHmJZoQyxUhMzx6unVPpbL89xZ_kEPBxCkGL5mrttcKmBg/viewform?usp=sharing&ouid=113101013161831270197"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      aqui
+                    </a>
+                    .
+                  </p>
                 </div>
               </div>
             </div>
