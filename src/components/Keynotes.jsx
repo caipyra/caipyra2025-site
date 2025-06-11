@@ -1,6 +1,7 @@
 import teo from '/img/keynotes/teo.jpeg';
 import patymori from '/img/keynotes/patymori.jpeg';
 import roberta from '/img/keynotes/roberta.jpeg';
+import seocam from '/img/keynotes/seocam.jpeg';
 
 export default function Keynotes() {
   return (
@@ -51,7 +52,6 @@ export default function Keynotes() {
               </div>
             </div>
           </div>
-          <div className="row"></div>
           <div className="col-md-6">
             <div className="keynote">
               <div className="keynote-image">
@@ -69,6 +69,29 @@ export default function Keynotes() {
                   astrofísicos usando técnicas de FNO. Divulga Astronomia e IA nas redes
                   sociais e é roteirista do canal Ciência Todo Dia. Também escreve
                   colunas semanais na Meteored.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="col-md-6">
+            <div className="keynote">
+              <div className="keynote-image">
+                <img src={seocam} alt="" />
+              </div>
+              <div className="keynote-meta">
+                <h3>Sergio Campos</h3>
+              </div>
+              <div className="keynote-content">
+                <p>
+                  Com quase 20 anos de experiência em desenvolvimento de software e
+                  liderança técnica, Sérgio, ou Seocam, já passou por empresas como Red
+                  Hat e Liber Capital, contribuindo para tornar plataformas mais
+                  robustas, escaláveis e com processos mais eficientes. Atualmente está
+                  na Uber, onde atua na evolução das APIs que conectam comerciantes e
+                  integradores à plataforma Uber Eats.
+                  <br />É cofundador da Associação Python Brasil e ex-Mozilla
+                  Representative, além de ter um longo histórico de envolvimento com
+                  comunidades de software livre.
                 </p>
               </div>
             </div>
