@@ -30,7 +30,7 @@ export default function Programacao() {
                   rel="noopener noreferrer"
                 >
                   <button type="button" className="btn btn-custom btn-lg">
-                    Ingressos à venda - 1º Lote <i className="fas fa-ticket"></i>
+                    Ingressos à venda - 2º Lote <i className="fas fa-ticket"></i>
                   </button>
                 </a>
               </div>

@@ -21,7 +21,7 @@ export default function Header() {
                     <button type="button" className="btn btn-custom btn-lg">
                       Ingressos à venda
                       <br /> <br />
-                      1º Lote <i className="fas fa-ticket"></i>
+                      2º Lote <i className="fas fa-ticket"></i>
                     </button>
                   </a>
                   <p className="ingresso-social">
