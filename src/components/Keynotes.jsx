@@ -79,7 +79,7 @@ export default function Keynotes() {
                 <img src={seocam} alt="" />
               </div>
               <div className="keynote-meta">
-                <h3>Sergio Campos</h3>
+                <h3>Sergio Oliveira</h3>
               </div>
               <div className="keynote-content">
                 <p>
