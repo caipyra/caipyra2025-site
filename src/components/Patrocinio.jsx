@@ -1,4 +1,8 @@
-import EmailLink from './EmailLink';
+import cgi_br from '/img/patrocinadores/cgi-br.png';
+import nic_br from '/img/patrocinadores/nic-br.png';
+import psf from '/img/patrocinadores/psf.png';
+import apyb from '/img/patrocinadores/apyb.png';
+import fatec from '/img/patrocinadores/fatec.png';
 
 export default function Patrocinio() {
   return (
@@ -6,28 +10,65 @@ export default function Patrocinio() {
       <div id="patrocinio" className="text-center">
         <div className="container">
           <div className="section-title">
-            <h2>Patrocinadores</h2>
+            <h2>Patrocínio</h2>
             <div className="col-xs-6 col-md-12">
               <p>
                 Para fazer um evento desse porte acontecer, precisamos de
-                patrocinadores. Se você ou sua empresa tem interesse em nos ajudar a
-                fazer esse evento acontecer, entre em contato conosco através do e-mail
+                patrocinadores. Estes são nossos patrocinadores e parceiros que ajudaram
+                a fornecer todo o suporte necessário para a realização do evento.
               </p>
-              <EmailLink />
             </div>
-          </div>
-          <div className="row">
-            <div className="col-xs-6 col-md-12">
-              <a
-                href="docs/CartaPatrocinio_Caipyra2025_PT.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <button type="button" className="btn btn-custom btn-lg">
-                  Proposta de patrocínio (pt){' '}
-                  <i className="fa fa-arrow-up-right-from-square"></i>
-                </button>
-              </a>
+
+            <h3>Patrocinadores</h3>
+            <div className="row align-items-center justify-content-center patrocinadores-row">
+              <div className="col-12 col-md-4">
+                <a
+                  href="https://www.python.org/psf-landing/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src={psf}
+                    alt="Python Software Foundation"
+                    className="img-fluid"
+                  />
+                </a>
+              </div>
+              <div className="col-6 col-md-4 mb-3 mb-md-0">
+                <a href="https://www.cgi.br/" target="_blank" rel="noopener noreferrer">
+                  <img src={cgi_br} alt="CGI.br" className="img-fluid" />
+                </a>
+              </div>
+              <div className="col-6 col-md-4 mb-3 mb-md-0">
+                <a href="https://www.nic.br/" target="_blank" rel="noopener noreferrer">
+                  <img src={nic_br} alt="NIC.br" className="img-fluid" />
+                </a>
+              </div>
+            </div>
+            <h3>Apoio</h3>
+            <div className="row align-items-center justify-content-center patrocinadores-row">
+              <div className="col-6 col-md-6 mb-3 mb-md-0">
+                <a
+                  href="http://www.fatecrp.edu.br"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img src={fatec} alt="FATEC" className="img-fluid" />
+                </a>
+              </div>
+              <div className="col-12 col-md-6">
+                <a
+                  href="https://apyb.python.org.br"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src={apyb}
+                    alt="Imagem do logo da Associação Python Brasil representada com o seu acrônimo APyB"
+                    className="img-fluid"
+                  />
+                </a>
+              </div>
             </div>
           </div>
         </div>
