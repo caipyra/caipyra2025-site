@@ -16,7 +16,11 @@ export default function Programacao() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <button type="button" className="btn btn-custom btn-lg">
+                  <button
+                    type="button"
+                    className="btn btn-custom btn-lg"
+                    style={{ marginBottom: '60px' }}
+                  >
                     Ingresso gratuito para tutoriais <i className="fas fa-ticket"></i>
                   </button>
                 </a>
@@ -29,7 +33,11 @@ export default function Programacao() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <button type="button" className="btn btn-custom btn-lg">
+                  <button
+                    type="button"
+                    className="btn btn-custom btn-lg"
+                    style={{ marginBottom: '60px' }}
+                  >
                     Ingressos à venda - 2º Lote <i className="fas fa-ticket"></i>
                   </button>
                 </a>
@@ -40,7 +48,7 @@ export default function Programacao() {
                 <p>Atividades de sprints a serem definidas em breve</p>
               </div> */}
             </div>
-            <div className="row" style={{ marginTop: '60px' }}>
+            <div className="row">
               <pretalx-schedule
                 event-url="https://talks.python.org.br/caipyra-2025/"
                 locale="en"
