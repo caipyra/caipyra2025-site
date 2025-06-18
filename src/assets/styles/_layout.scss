@@ -344,6 +344,32 @@ header .intro-text {
     color: rgba(255, 255, 255, 0.75);
   }
 
+  .btn-custom {
+    font-family: $font-secondary;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #5ca9fb;
+    background-image: $gradient-accent;
+    padding: 14px 34px;
+    letter-spacing: 1px;
+    margin: 28px;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 25px;
+    transition: all 0.5s linear;
+    border: 1px solid #fff;
+
+    &:hover,
+    &:focus,
+    &.focus,
+    &:active,
+    &.active {
+      color: #fff;
+      background-image: none;
+      background-color: #6372ff;
+    }
+  }
+
   .map-container {
     position: relative;
     width: 100%;
