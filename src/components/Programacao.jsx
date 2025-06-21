@@ -8,45 +8,35 @@ export default function Programacao() {
               <h2>Programação</h2>
             </div>
             <div className="row">
-              <div className="col-xs-6 col-md-6">
+              <div className="col-xs-4 col-md-4">
                 <i className="fa fa-chalkboard"></i>
                 <h3>19/06 - Tutoriais</h3>
-                <a
-                  href="https://caipyra2025.eventbrite.com.br"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                <button
+                  type="button"
+                  className="btn btn-custom btn-lg"
+                  style={{ marginBottom: '60px' }}
                 >
-                  <button
-                    type="button"
-                    className="btn btn-custom btn-lg"
-                    style={{ marginBottom: '60px' }}
-                  >
-                    Ingresso gratuito para tutoriais <i className="fas fa-ticket"></i>
-                  </button>
-                </a>
+                  Inscrições encerradas <i className="fas fa-ticket"></i>
+                </button>
               </div>
-              <div className="col-xs-6 col-md-6">
+              <div className="col-xs-4 col-md-4">
                 <i className="fa fa-podcast"></i>
                 <h3>20/06 e 21/06 - Palestras</h3>
-                <a
-                  href="https://caipyra2025.eventbrite.com.br"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                <button
+                  type="button"
+                  className="btn btn-custom btn-lg"
+                  style={{ marginBottom: '60px' }}
                 >
-                  <button
-                    type="button"
-                    className="btn btn-custom btn-lg"
-                    style={{ marginBottom: '60px' }}
-                  >
-                    Ingressos à venda - 2º Lote <i className="fas fa-ticket"></i>
-                  </button>
-                </a>
+                  Inscrições encerradas <i className="fas fa-ticket"></i>
+                </button>
               </div>
-              {/* <div className="col-xs-6 col-md-4">
+              <div className="col-xs-4 col-md-4">
                 <i className="fa fa-rocket"></i>
                 <h3>22/06 - Sprints</h3>
-                <p>Atividades de sprints a serem definidas em breve</p>
-              </div> */}
+                <p style={{ marginBottom: '60px' }}>
+                  Atividades de sprints não necessitam de inscrição. É só vir!
+                </p>
+              </div>
             </div>
             <div className="row">
               <pretalx-schedule

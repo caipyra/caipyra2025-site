@@ -13,18 +13,10 @@ export default function Header() {
                   <h1>
                     <p>O único evento de Python com quentão e paçoquinha!</p>
                   </h1>
-                  <a
-                    href="https://caipyra2025.eventbrite.com.br"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <button type="button" className="btn btn-custom btn-lg">
-                      Ingressos à venda
-                      <br /> <br />
-                      2º Lote <i className="fas fa-ticket"></i>
-                    </button>
-                  </a>
-                  <p className="ingresso-social">
+                  <button type="button" className="btn btn-custom btn-lg">
+                    Inscrições encerradas <i className="fas fa-ticket"></i>
+                  </button>
+                  {/* <p className="ingresso-social">
                     Caso você não possa arcar com um ingresso, você pode pleitear um
                     ingresso social clicando{' '}
                     <a
@@ -35,7 +27,7 @@ export default function Header() {
                       aqui
                     </a>
                     .
-                  </p>
+                  </p> */}
                 </div>
               </div>
             </div>
