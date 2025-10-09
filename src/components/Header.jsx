@@ -13,9 +13,18 @@ export default function Header() {
                   <h1>
                     <p>O único evento de Python com quentão e paçoquinha!</p>
                   </h1>
-                  <button type="button" className="btn btn-custom btn-lg">
+                  {/* <button type="button" className="btn btn-custom btn-lg">
                     Inscrições encerradas <i className="fas fa-ticket"></i>
-                  </button>
+                  </button> */}
+                  <a 
+                    href="/docs/Relatório_Técnico_e_Financeiro_1.pdf" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="btn btn-custom btn-lg"
+                    style={{ marginTop: '10px' }}
+                  >
+                    Relatório Técnico e Financeiro <i className="fas fa-file-pdf"></i>
+                  </a>
                   {/* <p className="ingresso-social">
                     Caso você não possa arcar com um ingresso, você pode pleitear um
                     ingresso social clicando{' '}
